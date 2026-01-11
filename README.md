@@ -1,4 +1,4 @@
-# angular
+# angular-framework-source
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 
@@ -17,8 +17,8 @@ Angular - a web framework for modern web apps
 
 ```bash
 # Clone the repository
-git clone https://github.com/amitdubeyup/angular.git
-cd angular
+git clone https://github.com/amitdubeyup/angular-framework-source.git
+cd angular-framework-source
 
 # Install dependencies
 npm install
@@ -66,7 +66,7 @@ Update the `.env` file with your configuration values.
 ## 📁 Project Structure
 
 ```
-angular/
+angular-framework-source/
 ├── package.json
 ├── .env.example
 ├── README.md
