@@ -1,159 +1,87 @@
-<h1 align="center">Angular - One framework. Mobile & desktop.</h1>
+# angular
 
-<p align="center">
-  <img src="aio/src/assets/images/logos/angular/angular.png" alt="angular-logo" width="120px" height="120px"/>
-  <br>
-  <i>Angular is a development platform for building mobile and desktop web applications
-    <br> using Typescript/JavaScript and other languages.</i>
-  <br>
-</p>
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 
-<p align="center">
-  <a href="https://www.angular.io"><strong>www.angular.io</strong></a>
-  <br>
-</p>
+Angular - a web framework for modern web apps
 
-<p align="center">
-  <a href="CONTRIBUTING.md">Contributing Guidelines</a>
-  ·
-  <a href="https://github.com/angular/angular/issues">Submit an Issue</a>
-  ·
-  <a href="https://blog.angular.io/">Blog</a>
-  <br>
-  <br>
-</p>
+## 🚀 Tech Stack
 
-<p align="center">
-  <a href="https://circleci.com/gh/angular/workflows/angular/tree/master">
-    <img src="https://img.shields.io/circleci/build/github/angular/angular/master.svg?logo=circleci&logoColor=fff&label=CircleCI" alt="CI status" />
-  </a>&nbsp;
-  <a href="https://www.npmjs.com/@angular/core">
-    <img src="https://img.shields.io/npm/v/@angular/core.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen" alt="Angular on npm" />
-  </a>&nbsp;
-  <a href="https://discord.gg/angular">
-    <img src="https://img.shields.io/discord/463752820026376202.svg?logo=discord&logoColor=fff&label=Discord&color=7389d8" alt="Discord conversation" />
-  </a>
-</p>
+- TypeScript
 
-<hr>
+## ✨ Features
 
-## Documentation
+- Modern and scalable architecture
+- Type-safe development with TypeScript
 
-Get started with Angular, learn the fundamentals and explore advanced topics on our documentation website.
+## 📦 Installation
 
-- [Getting Started][quickstart]
-- [Architecture][architecture]
-- [Components and Templates][componentstemplates]
-- [Forms][forms]
-- [API][api]
+```bash
+# Clone the repository
+git clone https://github.com/amitdubeyup/angular.git
+cd angular
 
-### Advanced
-
-- [Angular Elements][angularelements]
-- [Server Side Rendering][ssr]
-- [Schematics][schematics]
-- [Lazy Loading][lazyloading]
-
-## Development Setup
-
-### Prerequisites
-
-- Install [Node.js] which includes [Node Package Manager][npm]
-
-### Setting Up a Project
-
-Install the Angular CLI globally:
-
-```
-npm install -g @angular/cli
+# Install dependencies
+npm install
 ```
 
-Create workspace:
+## ⚙️ Configuration
 
-```
-ng new [PROJECT NAME]
-```
+Create a `.env` file in the root directory:
 
-Run the application:
-
-```
-cd [PROJECT NAME]
-ng serve
+```bash
+cp .env.example .env
 ```
 
-Angular is cross-platform, fast, scalable, has incredible tooling, and is loved by millions.
+Update the `.env` file with your configuration values.
 
-## Quickstart
+## 🚀 Usage
 
-[Get started in 5 minutes][quickstart].
+```bash
+```
 
-## Ecosystem
+## 📜 Available Scripts
 
-<p>
-  <img src="/docs/images/angular-ecosystem-logos.png" alt="angular ecosystem logos" width="500px" height="auto">
-</p>
+- `npm run /` - 
+- `npm run // 1` - Many developer of our checks/scripts/tools have moved to our ng-dev tool
+- `npm run // 2` - Find the usage you are looking for with:
+- `npm run // 3` - yarn ng-dev --help
+- `npm run / ` - 
+- `npm run postinstall` - node scripts/webdriver-manager-update.js && node --preserve-symlinks --preserve-symlinks-main ./tools/postinstall-patches.js
+- `npm run prepare` - husky install
+- `npm run test-ivy-aot` - bazelisk test --config=ivy --build_tag_filters=-no-ivy-aot,-fixme-ivy-aot --test_tag_filters=-no-ivy-aot,-fixme-ivy-aot
+- `npm run test-non-ivy` - bazelisk test --build_tag_filters=-ivy-only --test_tag_filters=-ivy-only
+- `npm run test-fixme-ivy-aot` - bazelisk test --config=ivy --build_tag_filters=-no-ivy-aot --test_tag_filters=-no-ivy-aot
+- `npm run list-fixme-ivy-targets` - bazelisk query --output=label 'attr("tags", "\[.*fixme-ivy.*\]", //...) except kind("sh_binary", //...) except kind("devmode_js_sources", //...)' | sort
+- `npm run lint` - yarn -s tslint && yarn -s ng-dev format changed --check
+- `npm run tslint` - tsc -p tools/tsconfig.json && tslint -c tslint.json "+(dev-infra|packages|modules|scripts|tools)/**/*.+(js|ts)"
+- `npm run public-api:check` - node goldens/public-api/manage.js test
+- `npm run public-api:update` - node goldens/public-api/manage.js accept
+- `npm run symbol-extractor:check` - node tools/symbol-extractor/run_all_symbols_extractor_tests.js test
+- `npm run symbol-extractor:update` - node tools/symbol-extractor/run_all_symbols_extractor_tests.js accept
+- `npm run ts-circular-deps:check` - yarn -s ng-dev ts-circular-deps check --config ./packages/circular-deps-test.conf.js
+- `npm run ts-circular-deps:approve` - yarn -s ng-dev ts-circular-deps approve --config ./packages/circular-deps-test.conf.js
+- `npm run ng-dev` - node dev-infra/ng-dev
+- `npm run ng-dev:dev` - ts-node --transpile-only -- dev-infra/cli.ts
 
-- [Angular Command Line (CLI)][cli]
-- [Angular Material][angularmaterial]
+## 📁 Project Structure
 
-## Changelog
+```
+angular/
+├── package.json
+├── .env.example
+├── README.md
+```
 
-[Learn about the latest improvements][changelog].
+## 🤝 Contributing
 
-## Upgrading
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Check out our [upgrade guide](https://update.angular.io/) to find out the best way to upgrade your project.
+## 📄 License
 
-## Contributing
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Contributing Guidelines
+## 👤 Author
 
-Read through our [contributing guidelines][contributing] to learn about our submission process, coding rules and more.
+**Amit Dubey**
 
-### Want to Help?
-
-Want to file a bug, contribute some code, or improve documentation? Excellent! Read up on our guidelines for [contributing][contributing] and then check out one of our issues labeled as <kbd>[help wanted](https://github.com/angular/angular/labels/help%20wanted)</kbd> or <kbd>[good first issue](https://github.com/angular/angular/labels/good%20first%20issue)</kbd>.
-
-### Code of Conduct
-
-Help us keep Angular open and inclusive. Please read and follow our [Code of Conduct][codeofconduct].
-
-## Community
-
-Join the conversation and help the community.
-
-- [Twitter][twitter]
-- [Discord][discord]
-- [Gitter][gitter]
-- [YouTube][youtube]
-- [StackOverflow][stackoverflow]
-- Find a Local [Meetup][meetup]
-
-[![Love Angular badge](https://img.shields.io/badge/angular-love-blue?logo=angular&angular=love)](https://www.github.com/angular/angular)
-
-**Love Angular? Give our repo a star :star: :arrow_up:.**
-
-[contributing]: CONTRIBUTING.md
-[quickstart]: https://angular.io/start
-[changelog]: CHANGELOG.md
-[ng]: https://angular.io
-[documentation]: https://angular.io/docs
-[angularmaterial]: https://material.angular.io/
-[cli]: https://cli.angular.io/
-[architecture]: https://angular.io/guide/architecture
-[componentstemplates]: https://angular.io/guide/displaying-data
-[forms]: https://angular.io/guide/forms-overview
-[api]: https://angular.io/api
-[angularelements]: https://angular.io/guide/elements
-[ssr]: https://angular.io/guide/universal
-[schematics]: https://angular.io/guide/schematics
-[lazyloading]: https://angular.io/guide/lazy-loading-ngmodules
-[node.js]: https://nodejs.org/
-[npm]: https://www.npmjs.com/get-npm
-[codeofconduct]: CODE_OF_CONDUCT.md
-[twitter]: https://www.twitter.com/angular
-[discord]: https://discord.gg/angular
-[gitter]: https://gitter.im/angular/angular
-[stackoverflow]: https://stackoverflow.com/questions/tagged/angular
-[youtube]: https://youtube.com/angular
-[meetup]: https://www.meetup.com/find/?keywords=angular"
+- GitHub: [@amitdubeyup](https://github.com/amitdubeyup)
